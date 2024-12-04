@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Map from './MiniatureMap';
+import '../Styles/CreateSpot.css';
 
 const CreateSpot = () => {
     const [spotName, setSpotName] = useState('');
@@ -80,16 +81,9 @@ const CreateSpot = () => {
             </div>
             <div>
             <label>Location:</label>
-                <label>Location:</label>
                 <div id="map" style={{ height: '400px', width: '50%', marginLeft: '25%', marginRight: '25%'}}>
                     <Map onMapClick={handleMapClick} />
                 </div>
-                {location && (
-                    <p>
-                        Selected Location: {location.geometry.coordinates[1]},{' '}
-                        {location.geometry.coordinates[0]}
-                    </p>
-                )}
             </div>
             <button type="submit">Create Spot</button>
         </form>

@@ -1,0 +1,26 @@
+.navbar {
+    background-color: lightgray;
+    padding: 2vh 0;
+    border-bottom: 1px solid white;
+    font-family: 'RandyGGRegular' !important;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    /* space out evenly accross screen width */
+    width: 100%;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

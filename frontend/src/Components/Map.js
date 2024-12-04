@@ -19,7 +19,7 @@ class Map extends React.Component {
 
   render() {
     return (
-      <div id="map-container" style={{ width:' 100%', height: '100vh', position: 'absolute' }}>
+      <div id="map-container" style={{ width:' 80%', height: '94vh', position: 'absolute', marginLeft: '20%' }}>
         <div id="map" style={{ height: '100%', position: 'absolute', width: '100%' }} />
       </div>
     );
